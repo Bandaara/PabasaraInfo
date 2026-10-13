@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="si">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Irosh Pabasara | Portfolio</title>
+  <link rel="icon" href="avatar.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&family=Noto+Sans+Sinhala:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="progress"></div>
+  <canvas id="matrix"></canvas>
+  <div class="scanlines"></div>
+
+  <header class="topbar">
+    <a href="#home" class="logo">&gt;_ IROSH PABASARA</a>
+    <nav class="menu" aria-label="Main menu">
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About me</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact me</a>
+    </nav>
+    <div class="tools">
+      <span id="clock" title="Sri Lanka time (UTC+5:30)">--:--:--</span>
+    </div>
+  </header>
+
+
+  <nav class="dots" aria-label="Sections">
+    <a href="#home" class="active" title="Home"></a>
+    <a href="#about" title="About"></a>
+    <a href="#skills" title="Skills"></a>
+    <a href="#contact" title="Contact"></a>
+  </nav>
+
+  <main>
+    <!-- HOME -->
+    <section id="home">
+      <div class="terminal">
+        <div class="bar"><i></i><i></i><i></i><span>ubettata@portfolio:~</span></div>
+        <div class="body hero">
+          <div class="hero-text">
+          <p><span class="prompt">$</span> whoami</p>
+          <h1 class="glitch" data-text="IROSH PABASARA">IROSH PABASARA</h1>
+          <p><span class="prompt">$</span> <span id="typing"></span><span class="cursor">█</span></p>
+          <div class="ascii" id="ascii" aria-label="BANDARA in ASCII codes"></div>
+          <a href="#contact" class="btn">Contact me</a>
+          </div>
+          <div class="avatar">
+            <span class="ring r1"></span>
+            <span class="ring r2"></span>
+            <img src="avatar.png" alt="Irosh Pabasara">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="panel reveal">
+        <h2>&gt; about_me</h2>
+        <p><b>Irosh Pabasara</b> (Bandaara) | Sri Lanka</p>
+        <p>Root access granted. Welcome to my digital space.</p>
+        <ul class="info">
+          <li><span>Name</span> Irosh Pabasara</li>
+          <li><span>Age</span> 18+</li>
+          <li><span>Location</span> Sri Lanka, Hambantota</li>
+          <li><span>Status</span> Developer, gamer, බුද්දිමතා, හෙනම කැරියා. Always learning, exploring code, and leveling up</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <div class="panel wide reveal">
+        <h2>&gt; skill_tree</h2>
+        <div class="tree">
+          <div class="node root">Irosh.skills</div>
+          <div class="branches">
+          <div class="branch">
+            <div class="node head">coding</div>
+            <ul class="leaves">
+            <li class="node leaf" style="--i:1"><label><span>HTML / CSS</span><b data-n="67">0%</b></label><div class="track"><div class="fill" data-w="67"></div></div></li>
+            <li class="node leaf" style="--i:2"><label><span>JavaScript</span><b data-n="30">0%</b></label><div class="track"><div class="fill" data-w="30"></div></div></li>
+            <li class="node leaf" style="--i:3"><label><span>Python</span><b data-n="19">0%</b></label><div class="track"><div class="fill" data-w="19"></div></div></li>
+            <li class="node leaf" style="--i:4"><label><span>Discord Dev</span><b data-n="98">0%</b></label><div class="track"><div class="fill" data-w="98"></div></div></li>
+            </ul>
+          </div>
+          <div class="branch">
+            <div class="node head">pro level</div>
+            <ul class="leaves">
+            <li class="node leaf" style="--i:5"><label><span>Play games</span><b data-n="100">0%</b></label><div class="track"><div class="fill" data-w="100"></div></div></li>
+            <li class="node leaf" style="--i:6"><label><span>Eat</span><b data-n="100">0%</b></label><div class="track"><div class="fill" data-w="100"></div></div></li>
+            <li class="node leaf" style="--i:7"><label><span>Sleep</span><b>6-8 H</b></label></li>
+            <li class="node leaf" style="--i:8"><label><span>Washing</span><b>5-6 times daily</b></label></li>
+            <li class="node leaf" style="--i:9"><label><span>Googling the same error again</span><b data-n="85">0%</b></label><div class="track"><div class="fill" data-w="85"></div></div></li>
+            <li class="node leaf" style="--i:10"><label><span>Opening 50 tabs at once</span><b data-n="90">0%</b></label><div class="track"><div class="fill" data-w="90"></div></div></li>
+            <li class="node leaf" style="--i:11"><label><span>Finding bugs I wrote myself</span><b data-n="75">0%</b></label><div class="track"><div class="fill" data-w="75"></div></div></li>
+            <li class="node leaf" style="--i:12"><label><span>Surviving on 1% battery</span><b data-n="95">0%</b></label><div class="track"><div class="fill" data-w="95"></div></div></li>
+            </ul>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="panel reveal">
+        <h2>&gt; contact</h2>
+        <div class="server-cards">
+          <div class="server-card" data-invite="fXVkcshCSn">
+            <div class="s-icon"><i class="fa-brands fa-discord"></i></div>
+            <div class="s-info">
+              <b class="s-name">Discord server 1</b>
+              <div class="s-stats">
+                <span class="pill"><i class="dot"></i><b class="s-online">-</b> online</span>
+                <span class="pill"><b class="s-members">-</b> members</span>
+              </div>
+              <small class="s-note">Loading live stats...</small>
+            </div>
+          </div>
+          <div class="server-card" data-invite="YyPt6U34KJ">
+            <div class="s-icon"><i class="fa-brands fa-discord"></i></div>
+            <div class="s-info">
+              <b class="s-name">Discord server 2</b>
+              <div class="s-stats">
+                <span class="pill"><i class="dot"></i><b class="s-online">-</b> online</span>
+                <span class="pill"><b class="s-members">-</b> members</span>
+              </div>
+              <small class="s-note">Loading live stats...</small>
+            </div>
+          </div>
+        </div>
+        <div class="links">
+          <button type="button" class="social" data-copy="bandaara" data-msg="Discord username copied: bandaara"><i class="fa-brands fa-discord"></i> Discord: bandaara</button>
+          <a class="social" href="https://discord.gg/fXVkcshCSn" target="_blank" rel="noopener" data-join="fXVkcshCSn"><i class="fa-brands fa-discord"></i> <span>Join server 1</span></a>
+          <a class="social" href="https://discord.gg/YyPt6U34KJ" target="_blank" rel="noopener" data-join="YyPt6U34KJ"><i class="fa-brands fa-discord"></i> <span>Join server 2</span></a>
+          <a class="social" href="https://www.tiktok.com/@pabasaraweerasingha2008" target="_blank" rel="noopener"><i class="fa-brands fa-tiktok"></i> TikTok</a>
+          <a class="social" href="https://wa.me/94772578848" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+          <a class="social" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=pabasaraweerasinghapersonal@gmail.com" target="_blank" rel="noopener" data-copy="pabasaraweerasinghapersonal@gmail.com" data-msg="Email copied"><i class="fa-solid fa-envelope"></i> Mail</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
